@@ -1,0 +1,117 @@
+<header>
+<nav class="navbar fixed-top navbar-dark navbar-expand-md bg-success text-white">
+    <a class="text-white navbar-brand" href="/">
+    <i class="fa fa-pagelines"></i> groccries stores
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto menu">
+            <li class="nav-item active">
+                <a href="#">HOME</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#fruit">FRUIT</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#juice">JUICE</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#salad">SALAD</a>
+            </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+            <a href="/cart" class="text-white nav-link">
+                <i class="text-warning fas fa-shopping-cart">
+                </i>
+                Shopping cart <i id="cart_n" style="color: yellow;"></i>
+            </a>
+            <a href="/admin" class="text-white nav-link dasabled">
+                <i class="far fa-user">
+                </i>
+               administrator
+            </a>
+        </form>
+    </div>
+</nav>
+</header>
+
+<main role="main">
+    <div id="carousel" data-ride="carousel" class="carousel slide">
+        <ol class="carousel-indicators">
+        <li  style="z-index:102;" data-target="#mycarousel" data-slide-to="0" class="active">
+
+        </li>
+        <li  style="z-index:102;" data-target="#mycarousel" data-slide-to="1">
+
+        </li>
+        <li  style="z-index:102;" data-target="#mycarousel" data-slide-to="2">
+
+        </li>
+        <li  style="z-index:102;" data-target="#mycarousel" data-slide-to="3">
+
+        </li>
+        </ol>
+        <div class="carousel-inner">
+            <img class="imgFilter first-slide" src="../public/images/cir3.jpg" alt="first slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>orgnic store</h1>
+                    <p>
+                        this is an organic store
+                    </p>
+                    <p><a href="" role="button" class="btn btn-primary btn-lg">products</a> </p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <img class="imgFilter second-slide" src="../public/images/co2.jpg" alt="second slide">
+            <div class="container">
+                <div class="carousel-caption text-left">
+                    <h1>orgnic store</h1>
+                    <p>
+                        this is an organic store
+                    </p>
+                    <p><a href="" role="button" class="btn btn-primary btn-lg">products</a> </p>
+                </div>
+            </div>
+        </div>
+         <div class="carousel-inner">
+            <img class="imgFilter third-slide" src="../public/images/cor1.jpg" alt="third slide">
+            <div class="container">
+                <div class="carousel-caption text-right">
+                    <h1>orgnic store</h1>
+                    <p>
+                        this is an organic store
+                    </p>
+                    <p><a href="" role="button" class="btn btn-primary btn-lg">products</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a style="z-index:101;" class="carousel-control-prev" role="button" data-slide="prev" href="#mycarousel">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">previuse</span>
+    </a>
+    <a style="z-index:101;" class="carousel-control-next" role="button" data-slide="next" href="#mycarousel">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">next</span>
+    </a>
+    </div>
+    <div class="container marketing">
+        <br>
+        <h2 id="fruit">fruits</h2>
+        <hr>
+        <div class="row" id="fruitDIV"></div>
+        <h2 id="juice">juice</h2>
+        <hr>
+        <div class="row" id="juiceDIV"></div>
+       <h2 id="salad">salad</h2>
+       <hr>
+       <div class="row" id="saladDIV"></div>
+       <hr class="featurette-divider">
+    </div>
+</main>
+<script src="../public/dist/main.js"></script>

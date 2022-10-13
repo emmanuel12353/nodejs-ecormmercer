@@ -1,0 +1,64 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: rgb(147, 147, 142);
+}
+.carouseln {
+margin-bottom: 2rem;
+z-index: 200;
+}
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+} 
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+.marketing .col-lg-4 {
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: .74rem;
+    margin-left:  .74rem;
+}
+.featurette-divider {
+    margin: 4rem 0;
+}
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.4rem;
+}
+@media(min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.24rem;
+        font-size: 1.24rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 40px;
+    }
+}
+@media(min-width: 62rem) {
+    
+    .featurette-heading {
+       margin-top: 7rem;
+    }
+}
+@media(max-width: 400px) {
+    .carousel, .figuritas {
+        display: none;
+    }
+}

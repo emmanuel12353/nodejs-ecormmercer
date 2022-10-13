@@ -1,0 +1,42 @@
+    <nav class="navbar fixed-top navbar-dark navbar-expand-md bg-success text-white">
+    <a class="text-white navbar-brand" href="/">
+    <i class="fa fa-pagelines"></i> groccries stores
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto menu">
+            <li class="nav-item active">
+                <a href="/admin">view order</a>
+            </li>
+        </ul>
+        
+    </div>
+</nav>
+<div class="container mb-3 mt-5">
+    <div class="row">
+        <div class="col">
+            <form action="/order" class="border border-warning p-3" method="POST" autocomplete="off">
+            <input type="hidden" name="_id" value="{{order.id}}" >
+            <div class="form-group">
+                <label for="">Order</label>
+                <input type="text" class="form-control" value="{{order.name}}" name="order"
+                placeholder="order">
+
+            </div>
+            <div class="form-group">
+                <label for="">Total</label>
+                <input type="text" class="form-control" value="{{order.total}}" name="total"
+                placeholder="total">
+
+            </div>
+             <div class="form-group">
+                <button class="btn btn-successs" type="submit">Submit</button>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
